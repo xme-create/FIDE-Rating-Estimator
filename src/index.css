@@ -259,6 +259,11 @@ input:focus {
 
   h1 { font-size: 1.6rem !important; }
 
+  /* Prevent iOS Safari auto-zoom on input focus (triggers when font < 16px) */
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+
   /* Shrink game tiles to fit 375px */
   .game-tile {
     gap: 0.4rem;
