@@ -31,10 +31,6 @@ input[type=number] {
   appearance: textfield;
 }
 
-html, body {
-  overflow-x: hidden;
-}
-
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   background-color: var(--bg-main);
@@ -46,10 +42,9 @@ body {
 }
 
 .container {
-  max-width: min(1150px, 100vw);
+  max-width: 1150px;
   width: 100%;
   margin: 0 auto;
-  box-sizing: border-box;
 }
 
 /* Dashboard Grid */
@@ -258,8 +253,26 @@ input:focus {
   .mobile-grid-stack { grid-template-columns: 1fr !important; }
   .mobile-h1 { font-size: 1.6rem !important; }
 
-  .section-card { padding: 1rem; }
-  .container { padding: 0.5rem; }
+  body { padding: 0.5rem; }
+  .section-card { padding: 0.75rem; }
+  .container { padding: 0; }
 
   h1 { font-size: 1.6rem !important; }
+
+  /* Shrink game tiles to fit 375px */
+  .game-tile {
+    gap: 0.4rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .pill-btn {
+    width: 26px;
+    height: 26px;
+    font-size: 0.65rem;
+  }
+
+  .change-label {
+    width: 38px;
+    font-size: 0.7rem;
+  }
 }
